@@ -1,10 +1,12 @@
 /* From uiverse.io by @alexruix */
+
 .card {
   height: 500px;
   width: 400px;
   padding: 1.9rem 1.2rem;
   text-align: center;
-  background: #afb3ed;
+  background: #2a2b38;
+  color: yellow;
  }
  
  /*Inputs*/
@@ -30,7 +32,7 @@
   border: none;
   outline: none;
   width: 100%;
-  color: #d3d3d3;
+  color: #f3ff08;
  }
  
  /*Text*/
