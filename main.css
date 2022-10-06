@@ -1,0 +1,15 @@
+.card{
+    border-radius: 0 !important;
+    margin: 0% !important;
+    border: none !important;
+    padding: 1em !important;
+}
+
+.navbar {
+    background-color: rgb(56, 189, 60) !important;
+}
+
+.home {
+    height: 50vh !important;
+    border-bottom: 1px solid #4b4b4b !important;
+}

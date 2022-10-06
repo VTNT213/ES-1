@@ -105,3 +105,7 @@
   padding-right: 7.2em;
   border-right: #bf9df6 solid 1px;
 }
+
+.navbar {
+  background-color: rgb(56, 189, 60) !important;
+}
