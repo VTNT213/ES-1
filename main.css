@@ -15,7 +15,7 @@
     background-image: url(car2.png) !important;
     background-size: cover !important;   
 }
-.card-body{
+.zz{
     height: 100px !important;
     width: 600px !important;
     margin: auto !important;
@@ -108,6 +108,7 @@
   /* sizing svg icons */
   .form svg {
     width: 17px;
+
   }
    
    
