@@ -11,6 +11,7 @@
 </head>
 
 <body class="bg-secondary">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
-         <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,80 +33,100 @@
             <a class="nav-link" href="register.html">Register</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
+
+      </div>
+    </div>
+  </nav>
+  <div class="card home">
+    <div class="card-body">
+      <div class="head1">
+        Add your Email-id to get alerts for your PUC expiry date.
+      </div>
+      <div class="searching">
+        <form class="form" action="search.php" method="post">
+          <button id="showData">
+            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-labelledby="search">
+              <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <input class="input" placeholder="Enter Car No." name="cnum" type="text">
+          <button class="reset" type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
         </form>
-      </div>
-    </div>
-   </nav>
-   <div class="card home">
-      <div class="card-body">
-         <div class="head1">
-            Add your Email-id to get alerts for your PUC expiry  date.
-         </div>
-         <div class="searching">
-            <form class="form">
-               <button>
-                   <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                       <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                   </svg>
-               </button>
-               <input class="input" placeholder="Type your text" required="" type="text">
-               <button class="reset" type="reset">
-                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                       <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                   </svg>
-               </button>
-           </form>
-         </div>
-         <div class="content123">
-            Help us in saving the environment which will  save you from Penalty.
-         </div>
-      </div>
-    </div>
-   <div class="card w-100">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="LDE_2.png" class="img-fluid rounded-start" alt="...">
+
+        <div class="head2">
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      </div>
+      <div class="content123">
+        Help us in saving the environment which will save you from Penalty.
+      </div>
+    </div>
+  </div>
+  <div class="card w-100">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="LDE_2.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
     </div>
-    <div class="card w-100">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-         </div>
-        </div>
-        <div class="col-md-4">
-         <img src="https://images.unsplash.com/photo-1584448141569-69f342da535c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=741&q=80" class="img-fluid" alt="...">
-       </div>
-      </div>
-    </div>
-    <div class="card w-100">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="LDE_2.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+  </div>
+  <div class="card w-100">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
+      <div class="col-md-4">
+        <img
+          src="https://images.unsplash.com/photo-1584448141569-69f342da535c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=741&q=80"
+          class="img-fluid" alt="...">
+      </div>
     </div>
+  </div>
+  <div class="card w-100">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="LDE_2.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script>
+  function search() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "pollPhp.php", true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp.send();
+    xmlhttp.onload = function () {
+      document.getElementById("head2").innerHTML = this.responseText;
+    }
+
+  }
+</script>
 
 </html>
