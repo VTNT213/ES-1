@@ -42,13 +42,13 @@
       <form action="login.php" method="post">
         <label for="cnum">Car Number</label>
         <div class="field">
-          <input autocomplete="off" id="cnum" placeholder="Enter Car Number" class="input-field" name="logemail"
-            type="text">
+          <input autocomplete="off" id="cnum" placeholder="Enter Car Number" class="input-field" name="cnum" type="text"
+            required>
         </div>
         <label for="mnum">Mobile Number</label>
         <div class="field">
-          <input autocomplete="off" id="contact" placeholder="Enter Mobile Number" class="input-field" name="logpass"
-            type="tel">
+          <input autocomplete="off" id="contact" placeholder="Enter Mobile Number" class="input-field" name="mnum"
+            type="tel" maxlength="10" required>
         </div>
         <button class="btn" type="submit">Login</button>
       </form>
@@ -56,42 +56,44 @@
 
     <div class="card">
       <h4 class="title">Register!</h4>
-      <form action="reg.php" method="post">
-        <label for="mnum">Mobile Number</label>
+
+      <form action="reg.php" method="post" target="_self">
+
+        <label for="flname">Full Name</label>
         <div class="field">
-          <input autocomplete="off" id="flname" placeholder="Enter Full Name" class="input-field" name="logemail"
-            type="text">
+          <input autocomplete="off" id="flname" placeholder="Enter Full Name" class="input-field" name="flname"
+            type="text" required>
         </div>
         <label for="mnum">Mobile Number</label>
         <div class="field">
-          <input autocomplete="off" id="mnum" placeholder="Enter Mobile Number" class="input-field" name="logpass"
-            type="tel">
+          <input autocomplete="off" id="mnum" placeholder="Enter Mobile Number" class="input-field" name="mnum"
+            type="tel" maxlength="10" required>
         </div>
-        <label for="mnum">Mobile Number</label>
+        <label for="mail">Email Address</label>
         <div class="field">
-          <input autocomplete="off" id="mail" placeholder="Enter Email Address" class="input-field" name="logpass"
-            type="email">
+          <input autocomplete="off" id="mail" placeholder="Enter Email Address" class="input-field" name="mail"
+            type="email" required>
         </div>
-        <label for="mnum">Mobile Number</label>
+        <label for="cnum0">Car Number</label>
         <div class="field">
-          <input autocomplete="off" id="cnum0" placeholder="Enter Car Number" class="input-field" name="logemail"
-            type="text">
+          <input autocomplete="off" id="cnum0" placeholder="Enter Car Number" class="input-field" name="cnum0"
+            type="text" required>
         </div>
-        <label for="mnum">Mobile Number</label>
+        <label for="creg">Car Reg. Date</label>
         <div class="field">
-          <input autocomplete="off" id="creg" placeholder="Enter Car Reg. Date" class="input-field" name="logpass"
-            type="date">
+          <input autocomplete="off" id="creg" placeholder="Enter Car Reg. Date" class="input-field" name="creg"
+            type="date" required>
         </div>
-        <label for="mnum">Mobile Number</label>
         <div class="field">
-          <input autocomplete="off" id="petrol" class="input-field" name="Fuel" value="Petrol" type="radio"> <label
-            for="petrol">Petrol</label>
-          <input autocomplete="off" id="diesel" class="input-field" name="Fuel" value="Diesel" type="radio"> Diesel
+          <input autocomplete="off" id="petrol" class="input-field" name="fuel" value="Petrol" type="radio" required>
+          <label for="petrol">Petrol</label>
+          <input autocomplete="off" id="diesel" class="input-field" name="fuel" value="Diesel" type="radio" required>
+          <label for="diesel">Diesel</label>
         </div>
-        <label for="mnum">Mobile Number</label>
+        <label for="puc">PUC Validity Date</label>
         <div class="field">
-          <input autocomplete="off" id="logpass" placeholder="Enter PUC Validity Date" class="input-field"
-            name="logpass" type="date">
+          <input autocomplete="off" id="puc" placeholder="Enter PUC Validity Date" class="input-field" name="puc"
+            type="date" required>
         </div>
         <button class="btn" type="submit">Register</button>
       </form>

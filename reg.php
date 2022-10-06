@@ -16,18 +16,19 @@ if ($conn === false) {
         . mysqli_connect_error());
 }
 
-$fname = $_POST['fname'];
-$contact = $_POST['contact'];
-$email = $_POST['email'];
-$cnum = $_POST['Cnum'];
-$creg = $_POST['Creg'];
-$fuel = $_POST['Fuel'];
-$puc = $_POST['Puc'];
+$fname = $_POST['flname'];
+$contact = $_POST['mnum'];
+$email = $_POST['mail'];
+$cnum = $_POST['cnum0'];
+$creg = $_POST['creg'];
+$fuel = $_POST['fuel'];
+$puc = $_POST['puc'];
 
-$q = "INSERT INTO Details VALUES ('$fname','$contact','$email','$cnum','$creg','$fuel','$puc')";
+$q = "INSERT INTO details VALUES ('$fname','$contact','$email','$cnum','$creg','$fuel','$puc')";
 
 if (mysqli_query($conn, $q)) {
-    echo "Records inserted successfully.";
+    echo "<script>alert('Details Submitted Successfully!')</script>
+    <script>window.location.href='register.html'</script>";
 } else {
     echo "ERROR: Could not able to execute $q. "
         . mysqli_error($conn);

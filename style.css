@@ -1,16 +1,16 @@
 /* From uiverse.io by @alexruix */
 
 .card {
-  height: 500px;
+  height: 700px;
   width: 400px;
   padding: 1.9rem 1.2rem;
   text-align: center;
   background: #2a2b38;
   color: yellow;
- }
- 
- /*Inputs*/
- .field {
+}
+
+/*Inputs*/
+.field {
   margin-top: .5rem;
   display: flex;
   align-items: center;
@@ -19,32 +19,32 @@
   background-color: #1f2029;
   border-radius: 4px;
   padding: .5em 1em;
- }
- 
- .input-icon {
+}
+
+.input-icon {
   height: 1em;
   width: 1em;
   fill: #ffeba7;
- }
- 
- .input-field {
+}
+
+.input-field {
   background: none;
   border: none;
   outline: none;
   width: 100%;
   color: #f3ff08;
- }
- 
- /*Text*/
- .title {
+}
+
+/*Text*/
+.title {
   margin-bottom: 1rem;
   font-size: 1.5em;
   font-weight: 500;
   color: #f5f5f5;
- }
- 
- /*Buttons*/
- .btn {
+}
+
+/*Buttons*/
+.btn {
   margin: 1rem;
   border: none;
   border-radius: 4px;
@@ -56,36 +56,35 @@
   color: #5e6681;
   box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
   transition: all .3s ease-in-out;
- }
- 
- .btn-link {
+}
+
+.btn-link {
   color: #f5f5f5;
   display: block;
   font-size: .75em;
   transition: color .3s ease-out;
- }
- 
- /*Hover & focus*/
- .field input:focus::placeholder {
+}
+
+/*Hover & focus*/
+.field input:focus::placeholder {
   opacity: 0;
   transition: opacity .3s;
- }
- 
- .btn:hover {
+}
+
+.btn:hover {
   background-color: #5e6681;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
- }
- 
- .btn-link:hover {
-  color: #ffeba7;
- }
+}
 
- .cards {
+.btn-link:hover {
+  color: #ffeba7;
+}
+
+.cards {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #1f2029;
- }
- 
+}
