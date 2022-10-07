@@ -8,12 +8,13 @@
     <title>Document</title>
     <style>
         .table1 {
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 65%;
-            margin: auto;
-            padding: 2%;
-            background-color: silver;
+            border: 1px solid black !important;
+            border-collapse: collapse !important;
+            width: 65% !important;
+            margin: auto !important;
+            padding: 2% !important;
+            background-color: silver !important;
+            height: 100vh !important;
         }
 
         .detail {
@@ -27,6 +28,29 @@
         .t1 {
             text-align: right;
             padding: 10px !important;
+        }
+
+        .flow {
+            width: 300px;
+            align-items: center !important;
+            overflow: hidden;
+
+        }
+
+        .certi {
+
+            border: 1px solid black !important;
+            border-collapse: collapse !important;
+            width: 65% !important;
+            margin: auto !important;
+            padding: 2% !important;
+        }
+
+        .f1 {
+            text-align: center;
+            border: 1px solid black !important;
+            padding: 1%;
+
         }
     </style>
     <link rel="stylesheet" href="main.css">
@@ -97,6 +121,8 @@
     }
     echo '
     <tr>
+    <td></td>
+    <td></td>
         <td>
             <a href="index.html"><button class="btn btn-primary">Back</button></a>
         </td>
@@ -107,36 +133,36 @@
     mysqli_close($conn);
 
     ?>
-    <table>
+    <table class="brdr" border=1>
         <tr>
-            <th>Vehicle Type</th>
-            <th>Percentage of CO</th>
-            <th>Hydrocarbon measured in ppm</th>
+            <th class='f1'>Vehicle Type</th>
+            <th class='f1'>Percentage of CO</th>
+            <th class='f1'>Hydrocarbon measured in ppm</th>
         </tr>
         <tr>
-            <td>2 and 3 wheeled vehicles (2 or 4 stroke) that are manufactured on or before 31st March 2000</td>
-            <td>4.5</td>
-            <td>9000</td>
+            <td class="flow f1">2 and 3 wheeled vehicles (2 or 4 stroke) that are manufactured on or before 31st March 2000</td>
+            <td class='f1'>4.5</td>
+            <td class='f1'>9000</td>
         </tr>
         <tr>
-            <td>2 and 3 wheeled vehicles (2 stroke) that are manufactured after 31st March 2000</td>
-            <td>3.5</td>
-            <td>6000</td>
+            <td class="flow f1">2 and 3 wheeled vehicles (2 stroke) that are manufactured after 31st March 2000</td>
+            <td class='f1'>3.5</td>
+            <td class='f1'>6000</td>
         </tr>
         <tr>
-            <td>2 and 3 wheeled vehicles (4 stroke) that are manufactured after 31st March 2000</td>
-            <td>3.5</td>
-            <td>4500</td>
+            <td class="flow f1">2 and 3 wheeled vehicles (4 stroke) that are manufactured after 31st March 2000</td>
+            <td class='f1'>3.5</td>
+            <td class='f1'>4500</td>
         </tr>
         <tr>
-            <td>4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II Norms</td>
-            <td>3</td>
-            <td>1500</td>
+            <td class="flow f1">4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II Norms</td>
+            <td class='f1'>3</td>
+            <td class='f1'>1500</td>
         </tr>
         <tr>
-            <td>4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II, Stage III or subsequent Norms</td>
-            <td>0.5</td>
-            <td>750</td>
+            <td class="flow f1">4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II, Stage III or subsequent Norms</td>
+            <td class='f1'>0.5</td>
+            <td class='f1'>750</td>
         </tr>
     </table>
 
