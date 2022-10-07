@@ -1,40 +1,108 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "puc";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table1 {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 65%;
+            margin: auto;
+            padding: 2%;
+            background-color: silver;
+        }
 
-$conn = mysqli_connect(
-    $servername,
-    $username,
-    $password,
-    $dbname
-);
-if ($conn === false) {
-    die("ERROR: Could not connect. "
-        . mysqli_connect_error());
-}
+        .detail {
+            font-size: 20px;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
 
-$cnum = $_POST['cnum'];
+        }
 
-$q = "SELECT * FROM details WHERE Cnum = '$cnum'";
+        .t1 {
+            text-align: right;
+            padding: 10px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
 
-//show all details
-echo "<table border='1'>";
-echo "<tr><td>Full Name</td><td>Contact</td><td>Email</td><td>Car Number</td><td>Car Registration</td><td>Fuel</td><td>PUC Validity Date</td></tr>";
-$result = mysqli_query($conn, $q);
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="index.html">ETHHEADS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="navbar-toggler-icon"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
 
-while ($row = mysqli_fetch_array($result)) {
-    echo "<tr><td>" . $row['Fname'] . "</td>";
-    echo "<td>" . $row['Contact'] . "</td>";
-    echo "<td>" . $row['Email'] . "</td>";
-    echo "<td>" . $row['Cnum'] . "</td>";
-    echo "<td>" . $row['Creg'] . "</td>";
-    echo "<td>" . $row['Fuel'] . "</td>";
-    echo "<td>" . $row['puc'] . "</td></tr>";
-}
-echo "</table>";
+            </div>
+        </div>
+    </nav>
 
-// Close connection
-mysqli_close($conn);
+
+    <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "puc";
+
+    $conn = mysqli_connect(
+        $servername,
+        $username,
+        $password,
+        $dbname
+    );
+    if ($conn === false) {
+        die("ERROR: Could not connect. "
+            . mysqli_connect_error());
+    }
+
+    $cnum = $_POST['cnum'];
+
+    $q = "SELECT * FROM details WHERE Cnum = '$cnum'";
+    $result = mysqli_query($conn, $q);
+
+    //show all details
+    echo "<div class='table1'>";
+    echo "<table class='detail'>";
+
+    while ($row = mysqli_fetch_array($result)) {
+        echo "<tr class='row1'><th class='t1'>Full Name:</th><td>&nbsp;</td><td>" . $row['Fname'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>Contact:</th><td></td><td>" . $row['Contact'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>Email:</th><td></td><td>" . $row['Email'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>Car Number:</th><td></td><td>" . $row['Cnum'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>Car Registration:</th><td></td><td>" . $row['Creg'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>Fuel:</th><td></td><td>" . $row['Fuel'] . "</td></tr>";
+        echo "<tr class='row1'><th class='t1'>PUC Validity Date:</th><td></td><td>" . $row['puc'] . "</td></tr>";
+    }
+    echo "</table>";
+    echo "</div>";
+
+    // Close connection
+    mysqli_close($conn);
+
+    ?>
+
+</body>
+
+</html>
