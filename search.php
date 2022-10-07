@@ -95,14 +95,52 @@
         echo "<tr class='row1'><th class='t1'>Fuel:</th><td></td><td>" . $row['Fuel'] . "</td></tr>";
         echo "<tr class='row1'><th class='t1'>PUC Validity Date:</th><td></td><td>" . $row['puc'] . "</td></tr>";
     }
+    echo '
+    <tr>
+        <td>
+            <a href="index.html"><button class="btn btn-primary">Back</button></a>
+        </td>
+    </tr>';
     echo "</table>";
-    echo "</div>";
 
     // Close connection
     mysqli_close($conn);
 
     ?>
+    <table>
+        <tr>
+            <th>Vehicle Type</th>
+            <th>Percentage of CO</th>
+            <th>Hydrocarbon measured in ppm</th>
+        </tr>
+        <tr>
+            <td>2 and 3 wheeled vehicles (2 or 4 stroke) that are manufactured on or before 31st March 2000</td>
+            <td>4.5</td>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <td>2 and 3 wheeled vehicles (2 stroke) that are manufactured after 31st March 2000</td>
+            <td>3.5</td>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <td>2 and 3 wheeled vehicles (4 stroke) that are manufactured after 31st March 2000</td>
+            <td>3.5</td>
+            <td>4500</td>
+        </tr>
+        <tr>
+            <td>4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II Norms</td>
+            <td>3</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>4 wheeled vehicles that are manufactured as per the Pre Bharat Stage II, Stage III or subsequent Norms</td>
+            <td>0.5</td>
+            <td>750</td>
+        </tr>
+    </table>
 
+    </div>
 </body>
 
 </html>
