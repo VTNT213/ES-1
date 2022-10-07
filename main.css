@@ -1,8 +1,13 @@
+.backg {
+  background-image: url("bg.jpg") !important;
+}
+
 .card {
   border-radius: 0 !important;
-  margin: 0% !important;
   border: none !important;
   padding: 1em !important;
+  width: 100% !important;
+  background-color: none !important;
 }
 
 .navbar {
@@ -25,7 +30,7 @@
   /* border: 1px solid #ffffff !important; */
   border-radius: 10px !important;
   text-align: center !important;
-  backdrop-filter: blur(9px) !important;
+  backdrop-filter: blur(12px) !important;
   border: 1px solid grey !important;
 }
 
@@ -42,8 +47,8 @@
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
-  --width-of-input: 200px;
-  --height-of-input: 40px;
+  --width-of-input: 210px;
+  --height-of-input: 45px;
   --border-height: 2px;
   --input-bg: #fff;
   --border-color: #2f2ee9;
@@ -58,7 +63,7 @@
   border-radius: var(--border-radius);
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff);
-  margin-left: 185px;
+  margin-left: 175px;
 }
 
 /* styling of Input */
@@ -128,9 +133,4 @@ input:not(:placeholder-shown)~.reset {
   height: 500px;
   margin: auto;
   background-color: #3d3d81;
-}
-
-.head1 {
-  font-size: 20px !important;
-  color: #ffffff !important;
 }

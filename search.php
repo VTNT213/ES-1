@@ -14,7 +14,7 @@
             margin: auto !important;
             padding: 2% !important;
             background-color: silver !important;
-            height: 100vh !important;
+            height: 120vh !important;
         }
 
         .detail {
@@ -57,6 +57,13 @@
             padding: 1%;
 
         }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
     </style>
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -89,6 +96,7 @@
     <div class='table1'>
         <a href="index.html"><button class="btn btn-primary">Back</button></a>
 
+
         <?php
 
         $servername = "localhost";
@@ -113,6 +121,7 @@
         $result = mysqli_query($conn, $q);
 
         //show all details
+        echo "<p class='title'>| User Datails |</p>";
         echo "<table class='detail'>";
 
         while ($row = mysqli_fetch_array($result)) {
@@ -126,7 +135,7 @@
         }
 
         echo "</table>";
-        echo "4"
+        echo "<hr>";
 
         // Close connection
         mysqli_close($conn);

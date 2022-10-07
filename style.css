@@ -45,7 +45,7 @@
 }
 
 /*Buttons*/
-.btn {
+.btn123 {
   margin: 1rem;
   border: none;
   border-radius: 4px;
@@ -59,7 +59,7 @@
   transition: all .3s ease-in-out;
 }
 
-.btn-link {
+.btn-link1 {
   color: #f5f5f5;
   display: block;
   font-size: .75em;
@@ -72,13 +72,13 @@
   transition: opacity .3s;
 }
 
-.btn:hover {
+.btn123:hover {
   background-color: #5e6681;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
 }
 
-.btn-link:hover {
+.btn-link1:hover {
   color: #ffeba7;
 }
 
