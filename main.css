@@ -129,3 +129,8 @@ input:not(:placeholder-shown)~.reset {
   margin: auto;
   background-color: #3d3d81;
 }
+
+.head1 {
+  font-size: 20px !important;
+  color: #ffffff !important;
+}
