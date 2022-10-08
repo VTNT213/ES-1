@@ -35,5 +35,4 @@ if (mysqli_query($conn, $q)) {
         . mysqli_error($conn);
 }
 
-// Close connection
 mysqli_close($conn);
