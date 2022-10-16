@@ -10,12 +10,7 @@
   background-color: none !important;
 }
 
-.navbar {
-  background-color: rgb(56, 189, 60) !important;
-}
-
 .home {
-  height: 50vh !important;
   border-bottom: 1px solid #4b4b4b !important;
   background-image: url(pollufinal.jpeg) !important;
   background-size: contain !important;
@@ -24,14 +19,14 @@
 }
 
 .zz {
-  height: 100px !important;
-  width: 600px !important;
-  margin: auto !important;
+  height: 45vh;
+  width: 600px;
+  margin: auto;
   /* border: 1px solid #ffffff !important; */
-  border-radius: 10px !important;
-  text-align: center !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid grey !important;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid grey;
 }
 
 /* From uiverse.io by @satyamchaudharydev */
