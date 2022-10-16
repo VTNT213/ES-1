@@ -317,8 +317,11 @@ body.dark .search-field i {
   align-items: center;
   justify-content: center;
   width: 150px;
+  margin-left: -250px;
+  margin-right: 100px;
 }
 
-.nav-links {
-  margin-left: 300px;
+.darkLight-searchBox {
+  margin-left: 200px;
+  margin-right: -200px;
 }

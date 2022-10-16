@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ES</title>
+  <title>Home</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -33,11 +33,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
+
   <nav>
     <div class="nav-bar">
-
-      <i class='bx bx-menu sidebarOpen'></i>
-      <span class="logo navLogo"><a href="index.html">Emission Care</a></span>
+      <div class="titlelogo">
+        <i class='bx bx-menu sidebarOpen'></i>
+        <span class="logo navLogo"><a href="index.html">Emission Care</a></span>
+      </div>
 
       <div class="menu">
         <div class="logo-toggle">
@@ -81,6 +83,7 @@
         Check the validity of your vehicle's PUC by entering its number.
       </div>
       <div class="searching">
+        <br>
         <form class="form" action="search.php" method="post">
           <button id="showData">
             <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -97,68 +100,61 @@
             </svg>
           </button>
         </form>
+        <form metho="post">
+          <button class="mails">Mail</button>
+        </form>
       </div>
       <div class="content123 head2">
         Help us in saving the environment which will save you from Penalty.
       </div>
     </div>
   </div>
+  <center>
+    <br>
+    <Hr width="90%" size=1 color="silver">
+  </center>
 
-
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="1stcard.jpeg" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">PUC Cerification</h5>
-          <p class="card-text"> PUC is a certification mark that is provided to vehicles that undergo the PUC Test
-            successfully.
-          </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+  <div class="card1 cardz">
+    <div class="img1 image">
+      <center><img src="1stcard.jpeg"></center>
+    </div>
+    <div class="c1">
+      <h5 class="card-title">PUC Cerification</h5>
+      <p class="card-text"> PUC is a certification mark that is provided to vehicles that undergo the PUC Test
+        successfully.
+      </p>
     </div>
   </div>
 
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">The Central Motor Vehicle Rule, 1989 mandates the PUC Certification.
-            The smoke emitted from vehicles, if left unchecked, could pollute the environment to a great extent.
-            The certification indicates that the vehicle's emissions are in alignment with standard pollution norms and
-            are not harmful to the environment. All vehicles on Indian roads are mandated to carry a valid PUC
-            certification.
-          </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="2NDSLIDE.jpeg" class="img-fluid">
-      </div>
+  <div class="card2 cardz">
+    <div class="img2 image">
+      <center><img src="2NDSLIDE.jpeg"></center>
+    </div>
+    <div class="c2">
+      <h5 class="card-title"></h5>
+      <p class="card-text">The Central Motor Vehicle Rule, 1989 mandates the PUC Certification.
+        The smoke emitted from vehicles, if left unchecked, could pollute the environment to a great extent.
+        The certification indicates that the vehicle's emissions are in alignment with standard pollution norms and
+        are not harmful to the environment. All vehicles on Indian roads are mandated to carry a valid PUC
+        certification.
+      </p>
     </div>
   </div>
 
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="3rdslide.jpeg" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">How to keep a check?</h5>
-          <p class="card-text">Regular pollution checks before PUC expiry date will keep the environment free from
-            solution</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+  <div class="card3 cardz">
+    <div class="img3 image">
+      <center><img src="3rdslide.jpeg"></center>
+    </div>
+    <div class="c3">
+      <h5 class="card-title">How to keep a check?</h5>
+      <p class="card-text">Regular pollution checks before PUC expiry date will keep the environment free from
+        solution</p>
     </div>
   </div>
+
 
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="script.js"></script>
 <script>
   function search() {
