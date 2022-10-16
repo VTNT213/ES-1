@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ES</title>
+  <title>Home</title>
   <link rel="stylesheet" href="main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
   <style>
     .head1 {
       margin-top: 65px;
@@ -30,32 +31,46 @@
 
 <body class="backg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
 
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand mb-0 fs-3" href="index.html">Emission Care</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <span class="navbar-toggler-icon"></span>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="btn fs-5" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn fs-5" href="register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn fs-5" href="about.html">About</a>
-          </li>
+
+  <nav>
+    <div class="nav-bar">
+      <div class="titlelogo">
+        <i class='bx bx-menu sidebarOpen'></i>
+        <span class="logo navLogo"><a href="index.html">Emission Care</a></span>
+      </div>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="index.html">Emission Care</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Registration</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-circle-half half'></i>
+          <i class='bx bx-brightness bright'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+            <i class='bx bx-x cancel'></i>
+            <i class='bx bx-search search'></i>
+          </div>
+
+          <div class="search-field">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search'></i>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -68,6 +83,7 @@
         Check the validity of your vehicle's PUC by entering its number.
       </div>
       <div class="searching">
+        <br>
         <form class="form" action="search.php" method="post">
           <button id="showData">
             <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -84,68 +100,63 @@
             </svg>
           </button>
         </form>
+        <form metho="post">
+
+          <button class="mails">Mail</button>
+        </form>
       </div>
       <div class="content123 head2">
         Help us in saving the environment which will save you from Penalty.
       </div>
     </div>
   </div>
+  <center>
+    <br>
+    <Hr width="90%" size=1 color="silver">
+  </center>
 
-
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="1stcard.jpeg" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">PUC Cerification</h5>
-          <p class="card-text"> PUC is a certification mark that is provided to vehicles that undergo the PUC Test
-            successfully.
-          </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+  <div class="card1 cardz">
+    <div class="img1 image">
+      <center><img src="1stcard.jpeg"></center>
+    </div>
+    <div class="c1">
+      <h5 class="card-title">PUC Cerification</h5>
+      <p class="card-text"> PUC is a certification mark that is provided to vehicles that undergo the PUC Test
+        successfully.
+      </p>
     </div>
   </div>
 
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">The Central Motor Vehicle Rule, 1989 mandates the PUC Certification.
-            The smoke emitted from vehicles, if left unchecked, could pollute the environment to a great extent.
-            The certification indicates that the vehicle's emissions are in alignment with standard pollution norms and
-            are not harmful to the environment. All vehicles on Indian roads are mandated to carry a valid PUC
-            certification.
-          </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="2NDSLIDE.jpeg" class="img-fluid">
-      </div>
+  <div class="card2 cardz">
+    <div class="img2 image">
+      <center><img src="2NDSLIDE.jpeg"></center>
+    </div>
+    <div class="c2">
+      <h5 class="card-title"></h5>
+      <p class="card-text">The Central Motor Vehicle Rule, 1989 mandates the PUC Certification.
+        The smoke emitted from vehicles, if left unchecked, could pollute the environment to a great extent.
+        The certification indicates that the vehicle's emissions are in alignment with standard pollution norms and
+        are not harmful to the environment. All vehicles on Indian roads are mandated to carry a valid PUC
+        certification.
+      </p>
     </div>
   </div>
 
-  <div class="card w-100 backg">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="3rdslide.jpeg" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">How to keep a check?</h5>
-          <p class="card-text">Regular pollution checks before PUC expiry date will keep the environment free from
-            solution</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+  <div class="card3 cardz">
+    <div class="img3 image">
+      <center><img src="3rdslide.jpeg"></center>
+    </div>
+    <div class="c3">
+      <h5 class="card-title">How to keep a check?</h5>
+      <p class="card-text">Regular pollution checks before PUC expiry date will keep the environment free from
+        solution</p>
     </div>
   </div>
+
 
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
 <script>
   function search() {
     var xmlhttp = new XMLHttpRequest();

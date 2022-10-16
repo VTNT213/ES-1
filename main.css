@@ -1,5 +1,9 @@
-.backg {
-  background-image: url("bg.jpg") !important;
+body {
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-world-environment-day-exhibition-board-background-fresh-dayworld-environment-dayenvironmental-image_72070.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 .card {
@@ -10,13 +14,7 @@
   background-color: none !important;
 }
 
-.navbar {
-  background-color: rgb(56, 189, 60) !important;
-}
-
 .home {
-  height: 50vh !important;
-  border-bottom: 1px solid #4b4b4b !important;
   background-image: url(pollufinal.jpeg) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -24,15 +22,21 @@
 }
 
 .zz {
-  height: 100px !important;
-  width: 600px !important;
-  margin: auto !important;
+  height: 45vh;
+  width: 600px;
+  margin: auto;
   /* border: 1px solid #ffffff !important; */
-  border-radius: 10px !important;
-  text-align: center !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid grey !important;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid grey;
 }
+
+
+.head1 {
+  margin-top: 1rem;
+}
+
 
 /* From uiverse.io by @satyamchaudharydev */
 /* From uiverse.io by @satyamchaudharydev */
@@ -47,8 +51,7 @@
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
-  --width-of-input: 210px;
-  --height-of-input: 45px;
+  --width-of-input: 230px;
   --border-height: 2px;
   --input-bg: #fff;
   --border-color: #2f2ee9;
@@ -63,7 +66,7 @@
   border-radius: var(--border-radius);
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff);
-  margin-left: 175px;
+  margin-left: 183px;
 }
 
 /* styling of Input */
@@ -133,4 +136,90 @@ input:not(:placeholder-shown)~.reset {
   height: 500px;
   margin: auto;
   background-color: #3d3d81;
+}
+
+.searching {
+  margin-bottom: -5px;
+}
+
+.cardz {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: auto, auto;
+  width: 630px;
+  align-content: center;
+  /* border: 1px solid rgb(0, 0, 0) !important; */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.card1 {
+  margin: 3rem;
+  margin-left: 6.5rem;
+}
+
+.card2 {
+  margin: 3rem;
+  margin-left: 50rem;
+}
+
+.card3 {
+  margin: 3rem;
+  margin-left: 6.5rem;
+}
+
+
+.c3 {
+  border-top: 2px solid #e5e5e5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.c1 {
+  border-top: 2px solid #e5e5e5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.c2 {
+  border-top: 2px solid #e5e5e5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+
+.mails {
+  margin: 10px;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px outset;
+  animation: animation 0.2s;
+}
+
+@keyframes animation {
+  0% {
+    border: 1px inset;
+  }
+
+  100% {
+    border: 1px outset;
+  }
+
+
 }
